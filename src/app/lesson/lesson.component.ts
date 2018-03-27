@@ -32,6 +32,7 @@ export class LessonComponent {
 
   cancelEdit() {
     this.tempLesson = {};
+    this.editMode = false;
   }
 
   private copyLesson(appLesson: Lesson): Lesson {
