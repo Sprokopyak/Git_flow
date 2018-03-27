@@ -1,0 +1,13 @@
+:host {
+  display: table-row;
+}
+
+td {
+  border: 1px solid #000;
+  width: 20%;
+  vertical-align: middle;
+}
+
+.material-icons {
+  cursor: pointer;
+}

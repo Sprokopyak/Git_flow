@@ -1,0 +1,18 @@
+<td align="center">{{ index + 1 }}</td>
+<td align="center">
+  <input type="text" name="index" *ngIf="editMode" [(ngModel)]="tempLesson.topic">
+  <span *ngIf="!editMode">{{ lesson.topic }}</span>
+</td>
+<td align="center">
+  <input type="text" name="index" *ngIf="editMode" [(ngModel)]="tempLesson.date">
+  <span *ngIf="!editMode">{{ lesson.date }}</span>
+</td>
+<td align="center">
+  <input type="text" name="index" *ngIf="editMode" [(ngModel)]="tempLesson.lecturer">
+  <span *ngIf="!editMode">{{ lesson.lecturer }}</span>
+</td>
+<td align="center">
+  <i class="material-icons" *ngIf="!editMode" (click)="startEdit()">mode_edit</i>
+  <i class="material-icons" *ngIf="editMode" (click)="save()">done</i>
+  <i class="material-icons" *ngIf="editMode" (click)="cancelEdit()">clear</i>
+</td>

@@ -12,4 +12,10 @@
       <th align="center">Actions</th>
     </tr>
   </thead>
+  <tbody>
+    <app-lesson *ngFor="let lesson of lessons; let i = index"
+      [lesson]="lesson"
+      [index]="i">
+    </app-lesson>
+  </tbody>
 </table>
