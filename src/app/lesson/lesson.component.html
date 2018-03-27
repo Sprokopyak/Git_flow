@@ -13,7 +13,7 @@
 </td>
 <td align="center">
   <i class="material-icons" *ngIf="!editMode" (click)="startEdit()">mode_edit</i>
-  <i class="material-icons" *ngIf="editMode" (click)="remove()">remove_circle_outline</i>
+  <i class="material-icons" *ngIf="!editMode" (click)="remove()">remove_circle_outline</i>
   <i class="material-icons" *ngIf="editMode" (click)="save()">done</i>
   <i class="material-icons" *ngIf="editMode" (click)="cancelEdit()">clear</i>
 </td>
