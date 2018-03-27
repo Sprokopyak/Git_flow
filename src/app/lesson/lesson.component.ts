@@ -21,6 +21,10 @@ export class LessonComponent {
     this.editMode = true;
   }
 
+  remove() {
+    this.lessonRemoved.emit(this.index);
+  }
+
   save() {
     this.lesson = this.copyLesson(this.tempLesson);
     this.editMode = false;

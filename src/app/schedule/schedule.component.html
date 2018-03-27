@@ -15,7 +15,9 @@
   <tbody>
     <app-lesson *ngFor="let lesson of lessons; let i = index"
       [lesson]="lesson"
-      [index]="i">
+      [index]="i"
+      (lessonRemoved)="lessonRemoved($event)"
+      (lessonChanged)="lessonChanged($event)">
     </app-lesson>
   </tbody>
 </table>
